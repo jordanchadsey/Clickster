@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Mario",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/0/08/MarioSSBWiiU.jpg/revision/latest/scale-to-width-down/180?cb=20130622150750",
+    "selected": "false"
+  },
+  {
+    "id": 2,
+    "name": "Luigi",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/e/e2/Luigi_SSB4.png/revision/latest/scale-to-width-down/180?cb=20150827054534",
+    "selected": "false"
+  },
+  {
+    "id": 3,
+    "name": "Peach",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/2/23/Peach_SSB4.png/revision/latest/scale-to-width-down/180?cb=20150827055147",
+    "selected": "false"
+  },
+  {
+    "id": 4,
+    "name": "Link",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/0/0b/Link_Pallette_01.jpg/revision/latest/scale-to-width-down/180?cb=20151022234254",
+    "selected": "false"
+  },
+  {
+    "id": 5,
+    "name": "Kirby",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/c/c9/Kirby_Pallette_01.jpg/revision/latest/scale-to-width-down/180?cb=20151022233943",
+    "selected": "false"
+  },
+  {
+    "id": 6,
+    "name": "Pikachu",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/8/8e/Pikachu_Pallette_01.jpg/revision/latest/scale-to-width-down/180?cb=20151021140649",
+    "selected": "false"
+  },
+  {
+    "id": 7,
+    "name": "Jigglypuff",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/3/30/Jigglypuff_Pallette_01.jpg/revision/latest/scale-to-width-down/180?cb=20151022232905",
+    "selected": "false"
+  },
+  {
+    "id": 8,
+    "name": "Fox",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/7/7b/Fox_Palette_01.jpg/revision/latest/scale-to-width-down/180?cb=20160312023158",
+    "selected": "false"
+  },
+  {
+    "id": 9,
+    "name": "Donkey Kong",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/d/d7/Donkey_Kong_Pallette_01.jpg/revision/latest/scale-to-width-down/180?cb=20151022230642",
+    "selected": "false"
+  },
+  {
+    "id": 10,
+    "name": "Yoshi",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/5/55/Yoshi_Pallette_01.jpg/revision/latest/scale-to-width-down/180?cb=20151021142532",
+    "selected": "false"
+  },
+  {
+    "id": 11,
+    "name": "Ness",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/7/78/Ness_Palette_01.jpg/revision/latest/scale-to-width-down/180?cb=20160312025419",
+    "selected": "false"
+  },
+  {
+    "id": 12,
+    "name": "Samus",
+    "image": "https://vignette.wikia.nocookie.net/ssb/images/6/6f/Samus_Palette_01.jpg/revision/latest/scale-to-width-down/180?cb=20160311022205",
+    "selected": "false"
+  }
+]

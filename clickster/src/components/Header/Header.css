@@ -1,0 +1,13 @@
+.jumbotron{
+  text-align: center;
+  max-height: 300px;
+}
+
+h1{
+  margin-top: 0px;
+}
+
+.score{
+  font-weight: bolder;
+
+}
