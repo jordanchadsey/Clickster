@@ -5,7 +5,7 @@ const Images = props => (
 
   <div className="card">
     <div className="img-container">
-      <img alt={props.name} src={props.image} onClick ={() => props.selectedCard(props.id)} selected= {props.selected} />
+      <img alt={props.name} src={props.image} onClick ={() => props.selectedCard(props.id)} selected= {props.selected} id= {props.name} />
     </div>
     </div>
 );

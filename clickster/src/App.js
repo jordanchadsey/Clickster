@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import Score from './components/Header';
+import HighScore from './components/Header';
 import Wrapper from './components/Wrapper';
-import Score from './components/Header/Score.js';
 import Images from './components/Images';
 import images from "./images.json";
+
+
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -30,21 +33,53 @@ class App extends Component {
   state = {
 
     images: images,
-    shuffle: false
+    shuffle: false,
+    score: 0,
+    message: "",
+    highscore: 0
 
   };
 
+  addScore = () => {
+
+    this.setState({ score: this.state.score + 1 });
+  };
+
+
+
+  gameRestart = () => {
+    this.setState({ score: 0});
+    const selectedImg = this.state.images.filter(item => item.selected === true);
+    const imageFix = selectedImg.map(item => item.selected = false);
+    console.log(selectedImg)
+    shuffle(this.state.images);
+    this.setState({shuffle: true});
+
+
+  }
   selectedCard = id => {
 
     const selectedImage = this.state.images.filter(item => item.id === id);
     console.log(selectedImage);
     if (selectedImage[0].selected === true){
-      // decrement Score
-shuffle(this.state.images);
-      alert('You already chose that one!');
-      this.setState({shuffle: true});
+
+        this.setState({message: "You lose, let's play again!"});
+        if (this.state.score > this.state.highscore){
+        this.setState({highscore:this.state.score})
+      }
+        this.gameRestart();
+
+
+    if (this.state.score > 11){
+        this.setState({message: "You win, let's play again!"});
+        this.gameRestart();
+        shuffle(this.state.images);
+
+      }
     }
     else{
+    this.setState({message: ""});
+    this.addScore();
     selectedImage[0].selected = true;
     shuffle(this.state.images);
     this.setState({shuffle: true});}
@@ -52,13 +87,16 @@ shuffle(this.state.images);
 
   }
 
+
   render() {
 
     return (
+      <div>
+      <Header
+        score = {this.state.score}
+        highscore = {this.state.highscore}/>
       <div className = "container">
-      <Header>
-        <Score/>
-      </Header>
+        <h2> {this.state.message} </h2>
       <Wrapper>
 
         {this.state.images.map(images=> (
@@ -74,14 +112,16 @@ shuffle(this.state.images);
 
 
         />
+
       ))}
 
 
       </Wrapper>
     </div>
+  </div>
 
     );
   }
-}
+};
 
 export default App;

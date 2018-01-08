@@ -1,48 +1,36 @@
 .card {
-  background: #ffffff;
-  border-radius: 2px;
-  border: 15px black;
+  background: none;
+  border-radius: 5px !important;
+  border: 20px black !important;
   height: 200px;
-  margin: 1rem;
+  margin: 0.7rem;
   position: relative;
   width: 200px;
   box-shadow: 0 3px 6px black, 0 3px 6px black;
   text-align: left;
+
 }
 
 .card > .img-container {
   height: 100%;
   overflow: hidden;
   text-align: center;
-  background:#ffffff;
+  background: white;
+  vertical-align: middle;
+
+
 }
 .card > .img-container > img {
   width: 100%
 }
 
-.card > .content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 15px;
+#Mario{
+  padding: 0.5rem;
+  padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
+
 }
 
-.card > .content > ul {
-  list-style-type: none;
-}
-
-.card > .content > ul > li {
-  margin-top: 18px;
-}
-
-.card > .remove {
-  color: #ff1744;
-  font-size: 48px;
-  position: absolute;
-  top: -20px;
-  right: 5px;
-  cursor: pointer;
-}
-
-.card > .remove:hover {
-  color: #d50000;
+#Luigi{
+  padding: 5px;
 }
