@@ -23,8 +23,11 @@ p, span{
   color: white;
 }
 .pscore{
-  font-size: 14px;
+  font-size: 12px;
 }
+/* .score, .highscore{
+  max-height: 20px;
+} */
 .lead{
   font-size: 17px;
 }

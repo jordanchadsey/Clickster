@@ -51,7 +51,6 @@ class App extends Component {
     this.setState({ score: 0});
     const selectedImg = this.state.images.filter(item => item.selected === true);
     const imageFix = selectedImg.map(item => item.selected = false);
-    console.log(selectedImg)
     shuffle(this.state.images);
     this.setState({shuffle: true});
 
@@ -64,16 +63,18 @@ class App extends Component {
     if (selectedImage[0].selected === true){
 
         this.setState({message: "You lose, let's play again!"});
-        if (this.state.score > this.state.highscore){
-        this.setState({highscore:this.state.score})
-      }
+
+      if (this.state.score > this.state.highscore){
+        this.setState({highscore:this.state.score});
+        }
         this.gameRestart();
 
 
     if (this.state.score > 11){
         this.setState({message: "You win, let's play again!"});
+        this.setState({highscore: this.state.score});
         this.gameRestart();
-        shuffle(this.state.images);
+
 
       }
     }

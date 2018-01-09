@@ -5,9 +5,9 @@ import "./Header.css";
 
 const Header = props =>(
     <div className = "header">
-    <div class="jumbotron">
-    <h1 class="display-3 left title">Clickster</h1>
-    <p class="lead">Do you think that you can remember which pics you've clicked? Don't be tricked!</p>
+    <div className="jumbotron">
+    <h1 className="display-3 left title">Clickster</h1>
+    <p className="lead">Do you think that you can remember which pics you've clicked? Don't be tricked!</p>
     <span className = "pscore">Current Score:</span><Score score= {props.score}/>    <span className = "pscore">High Score:</span><HighScore highscore= {props.highscore}/>
   </div>
 </div>
